@@ -6,7 +6,7 @@ var ground,ground_image,invisible_ground;
 var girl,girl_running,girl_collided,girlImage,zombie,zombie_running,zombie_attack;
 var obstaclesGroup,obstacle1,obstacle2,obstacle3,obstacle4;
 var jumpSound,dieSound,checkpointSound;
-var score;
+var score; 
 var gameOver,restart,gameOverImage,restartImage;
 
 function preload(){
@@ -100,7 +100,7 @@ zombie.collide(invisible_ground);
        checkPointSound.play() 
     }
     
- if((keyDown("space")&& girl.y >= 220)) {
+ if((keyDown("space")&& girl.y >= 400)) {
    girl.velocityY = -12;
     jumpSound.play();
   }  
